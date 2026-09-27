@@ -1,0 +1,35 @@
+string solve(int N, int X, const vector<int>& A) {
+    int i,flag=0;
+    string s="NO",Y="YES";
+    
+    for(i=0;i<A.size();i++){
+        if (A[i]==N){
+            flag=1;
+            break;
+        }
+            else
+            flag=0;
+        }
+    
+    for(i=0;i<A.size();i++){
+         if (A[i]==X){
+            flag=1;
+            break;
+         }
+            else{
+                
+            }
+            flag=0;
+    }
+         
+    
+    
+            if(flag==0){
+                return s;
+                }
+                else{
+                return Y;
+                }
+            
+       
+    }
