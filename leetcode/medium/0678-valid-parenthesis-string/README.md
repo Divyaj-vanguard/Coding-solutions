@@ -58,8 +58,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-10-05T17:25:54.606Z  
+**Memory:** 7.7 MB  
+**Submitted:** 2026-10-05T17:36:35.659Z  
 
 ```cpp
 class Solution {
@@ -74,20 +74,19 @@ public:
                 c+=1;
                 else if(s[i]==')')
                 c-=1;
-        }
-        for(i=0;i<s.size();i++){
-            if(c>=1){
-                if(s[i]=='*')
-                c-=1;
             }
-            else if(c<0){
-                if(s[i]=='*'){
-                    c+=1;
+             for (i=0;i<s.size()-1;i++){
+                  if(s[i]=='*'){
+                    if(c>0){
+                        c-=1;
+                    }
+                    else if(c<0){
+                        c+=1;
+                    }
+                  }
+      
                 }
             }
-        }
-        }
-
         if(c==0){
             return true;
         }
