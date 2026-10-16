@@ -1,4 +1,6 @@
-for i in {1..50}
-do
-echo $i
-done
+read -r x
+read -r y
+echo "$(($x+$y))"
+echo "$(($x-$y))"
+echo "$(($x*$y))"
+echo "$(($x/$y))"
