@@ -1,4 +1,4 @@
-# The World of Numbers
+# Comparing Numbers
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -33,15 +33,20 @@ Exactly one of the following lines:
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T15:35:48.088Z  
+**Submitted:** 2026-10-16T15:44:49.833Z  
 
 ```sh
 read -r x
 read -r y
-echo "$(($x+$y))"
-echo "$(($x-$y))"
-echo "$(($x*$y))"
-echo "$(($x/$y))"
+if (($x>$y))
+then
+echo "X is greater than Y"
+elif (($x==$y))
+then 
+echo "X is equal to Y"
+else
+echo "X is less than Y"
+fi
 
 ```
 
