@@ -1,9 +1,12 @@
-read -r a
-if [[ "$a" == 'Y' || "$a" == 'y' ]]
+read -r x
+read -r y
+read -r z
+if [[ $x == $y && $y == $z ]]
+then 
+    echo EQUILATERAL
+elif [[ $x == $y || $x == $z || $y == $z ]]
 then
-    echo "YES"
-elif [[ "$a" == 'N' || "$a" == 'n' ]]
-then
-    echo "NO"
+    echo ISOSCELES
+else
+    echo SCALENE
 fi
-
