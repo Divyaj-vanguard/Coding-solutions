@@ -1,4 +1,4 @@
-# Getting started with conditionals
+# More on Conditionals
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -29,18 +29,21 @@ One word: either "SCALENE" or "EQUILATERAL" or "ISOSCELES" (quotation marks excl
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-16T17:04:14.931Z  
+**Submitted:** 2026-10-16T17:07:58.360Z  
 
 ```sh
-read -r a
-if [[ "$a" == 'Y' || "$a" == 'y' ]]
+read -r x
+read -r y
+read -r z
+if [[ $x == $y && $y == $z ]]
+then 
+    echo EQUILATERAL
+elif [[ $x == $y || $x == $z || $y == $z ]]
 then
-    echo "YES"
-elif [[ "$a" == 'N' || "$a" == 'n' ]]
-then
-    echo "NO"
+    echo ISOSCELES
+else
+    echo SCALENE
 fi
-
 
 ```
 
