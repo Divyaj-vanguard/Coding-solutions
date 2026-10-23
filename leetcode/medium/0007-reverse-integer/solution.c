@@ -19,7 +19,7 @@ int reverse(int n){
     num/=10;
     c--;
     }
-    if(i>sizeof(int))
+    if(i>INT_MAX)
     return 0;
     else
     return -i;
@@ -32,7 +32,7 @@ int reverse(int n){
     num/=10;
     c--;
     }
-    if(i>sizeof(int))
+    if(i>INT_MAX)
     return 0;
     else
     return i;
