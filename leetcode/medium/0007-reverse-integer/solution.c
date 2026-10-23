@@ -1,18 +1,40 @@
-
-    #include<limits.h>
-int reverse(int x){
- long long n;
- long long num=0;
-
-    while(x!=0){
-    n=x%10;
-    num=num*10+n;
-    x=x/10;
+int reverse(int n){
+    int c=0, i=0;
+    int num=n;
+    int dig;
+    if (n<0){
+        n*=-1;
+    }
+    while(n>0){
+        n/=10;
+        c++;
+    }
+    if(num<0){
+        num*=-1;
     
- }
- if (num>INT_MAX || num<INT_MIN){
+    while(num>0){
+
+    dig=num%10;
+    i=i+dig*pow(10,c-1);
+    num/=10;
+    c--;
+    }
+    if(i>sizeof(int))
     return 0;
- }
- else
-    return num;
+    else
+    return -i;
+    }
+    else {
+       while(num>0){
+
+    dig=num%10;
+    i=i+dig*pow(10,c-1);
+    num/=10;
+    c--;
+    }
+    if(i>sizeof(int))
+    return 0;
+    else
+    return i;
+}
 }
