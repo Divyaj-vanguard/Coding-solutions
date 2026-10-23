@@ -43,9 +43,9 @@ Output: 21
 ## Solution
 
 **Language:** C  
-**Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-10-23T21:12:01.403Z  
+**Runtime:** 2 ms  
+**Memory:** 8.6 MB  
+**Submitted:** 2026-10-23T21:12:40.297Z  
 
 ```c
 int reverse(int n){
@@ -69,7 +69,7 @@ int reverse(int n){
     num/=10;
     c--;
     }
-    if(i>sizeof(int))
+    if(i>INT_MAX)
     return 0;
     else
     return -i;
@@ -82,7 +82,7 @@ int reverse(int n){
     num/=10;
     c--;
     }
-    if(i>sizeof(int))
+    if(i>INT_MAX)
     return 0;
     else
     return i;
