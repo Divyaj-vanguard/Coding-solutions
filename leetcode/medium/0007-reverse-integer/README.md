@@ -44,49 +44,24 @@ Output: 21
 
 **Language:** C  
 **Runtime:** 4 ms (beats 24.69%)  
-**Memory:** 9.2 MB (beats 79.05%)  
-**Submitted:** 2026-10-23T21:14:22.944Z  
+**Memory:** 9 MB (beats 94.11%)  
+**Submitted:** 2026-10-23T21:23:01.429Z  
 
 ```c
-int reverse(long long n){
-    long c=0, i=0;
-    long num=n;
+int reverse(int n){
+    long num=0;
     long dig;
-    if (n<0){
-        n*=-1;
-    }
-    while(n>0){
+
+    while(n!=0){
+        dig=n%10;
+        num=num*10+dig;
         n/=10;
-        c++;
     }
-    if(num<0){
-        num*=-1;
-    
-    while(num>0){
 
-    dig=num%10;
-    i=i+dig*pow(10,c-1);
-    num/=10;
-    c--;
-    }
-    if(i>INT_MAX)
+    if(num>INT_MAX || num<INT_MIN)
     return 0;
-    else
-    return -i;
-    }
-    else {
-       while(num>0){
-
-    dig=num%10;
-    i=i+dig*pow(10,c-1);
-    num/=10;
-    c--;
-    }
-    if(i>INT_MAX)
-    return 0;
-    else
-    return i;
-}
+    else 
+    return num;
 }
 ```
 
