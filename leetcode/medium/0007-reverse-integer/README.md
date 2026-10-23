@@ -43,15 +43,15 @@ Output: 21
 ## Solution
 
 **Language:** C  
-**Runtime:** 2 ms  
-**Memory:** 8.6 MB  
-**Submitted:** 2026-10-23T21:12:40.297Z  
+**Runtime:** 4 ms (beats 24.69%)  
+**Memory:** 9.2 MB (beats 79.05%)  
+**Submitted:** 2026-10-23T21:14:22.944Z  
 
 ```c
-int reverse(int n){
-    int c=0, i=0;
-    int num=n;
-    int dig;
+int reverse(long long n){
+    long c=0, i=0;
+    long num=n;
+    long dig;
     if (n<0){
         n*=-1;
     }
