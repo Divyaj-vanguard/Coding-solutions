@@ -43,24 +43,26 @@ Output: 21
 ## Solution
 
 **Language:** C  
-**Runtime:** 4 ms (beats 24.69%)  
-**Memory:** 9 MB (beats 94.11%)  
-**Submitted:** 2026-10-23T21:23:01.429Z  
+**Runtime:** 3 ms (beats 55.77%)  
+**Memory:** 8.9 MB (beats 99.58%)  
+**Submitted:** 2026-10-23T21:23:36.326Z  
 
 ```c
-int reverse(int n){
-    long num=0;
-    long dig;
+#include<limits.h>
+int reverse(int x){
+ long long n;
+ long long num=0;
 
-    while(n!=0){
-        dig=n%10;
-        num=num*10+dig;
-        n/=10;
-    }
-
-    if(num>INT_MAX || num<INT_MIN)
+    while(x!=0){
+    n=x%10;
+    num=num*10+n;
+    x=x/10;
+    
+ }
+ if (num>INT_MAX || num<INT_MIN){
     return 0;
-    else 
+ }
+ else
     return num;
 }
 ```
