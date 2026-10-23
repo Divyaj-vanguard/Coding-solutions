@@ -1,7 +1,7 @@
-int reverse(int n){
-    int c=0, i=0;
-    int num=n;
-    int dig;
+int reverse(long long n){
+    long c=0, i=0;
+    long num=n;
+    long dig;
     if (n<0){
         n*=-1;
     }
