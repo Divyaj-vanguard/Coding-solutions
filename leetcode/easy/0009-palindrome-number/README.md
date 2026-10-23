@@ -48,9 +48,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** C  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.8 MB (beats 62.30%)  
-**Submitted:** 2026-09-27T12:03:05.068Z  
+**Runtime:** 11 ms (beats 6.62%)  
+**Memory:** 8.7 MB (beats 81.36%)  
+**Submitted:** 2026-10-23T21:27:16.537Z  
 
 ```c
 bool isPalindrome(int x) {
