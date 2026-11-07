@@ -43,12 +43,12 @@ Output: 21
 ## Solution
 
 **Language:** C  
-**Runtime:** 3 ms (beats 55.77%)  
-**Memory:** 8.9 MB (beats 99.58%)  
-**Submitted:** 2026-10-23T21:23:36.326Z  
+**Runtime:** 2 ms (beats 65.82%)  
+**Memory:** 9 MB (beats 84.90%)  
+**Submitted:** 2026-11-07T15:06:50.967Z  
 
 ```c
-#include<limits.h>
+#pragma GCC optimize("O3")
 int reverse(int x){
  long long n;
  long long num=0;
