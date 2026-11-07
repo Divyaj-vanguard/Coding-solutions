@@ -1,4 +1,4 @@
-#include<limits.h>
+#pragma GCC optimize("O3")
 int reverse(int x){
  long long n;
  long long num=0;
